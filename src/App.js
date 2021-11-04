@@ -10,7 +10,13 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
-  // your config
+  apiKey: "AIzaSyDWFrzSjCl_lKDES2EZcp6cCCl6p6SLNr8",
+  authDomain: "things-3feb4.firebaseapp.com",
+  projectId: "things-3feb4",
+  storageBucket: "things-3feb4.appspot.com",
+  messagingSenderId: "412785101004",
+  appId: "1:412785101004:web:e0569a1d7cefa641fd9a69",
+  measurementId: "G-CRMZ0BP196"
 })
 
 const auth = firebase.auth();
@@ -25,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1>Things</h1>
         <SignOut />
       </header>
 
